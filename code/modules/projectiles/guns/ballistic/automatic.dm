@@ -278,8 +278,6 @@
 		return
 	..()
 
-
-
 // SNIPER //
 
 /obj/item/gun/ballistic/automatic/sniper_rifle

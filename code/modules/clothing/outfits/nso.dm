@@ -16,8 +16,6 @@
 
 /obj/item/storage/belt/military/camo/stealth
 	name = "stealth rig"
-	icon_state = "explorer2"
-	item_state = "webbing"
 
 /obj/item/storage/belt/military/camo/nso/ComponentInitialize() // NSO Soldier
 	. = ..()
@@ -31,12 +29,19 @@
 
 /obj/item/storage/belt/military/camo/stealth/ComponentInitialize() // NSO Infiltrator
 	. = ..()
-	new /obj/item/gun/ballistic/automatic/pistol/m1911 (src)
 	new /obj/item/ammo_box/magazine/m45(src)
 	new /obj/item/ammo_box/magazine/m45(src)
 	new /obj/item/book/granter/martial/cqc (src)
-	new /obj/item/chameleon(src)
 	new /obj/item/card/emag(src)
+	new /obj/item/chameleon(src)
+
+/obj/item/storage/belt/military/camo/elite/ComponentInitialize() // NSO Elite
+	. = ..()
+	new /obj/item/ammo_box/magazine/m50(src)
+	new /obj/item/ammo_box/magazine/m50(src)
+	new /obj/item/book/granter/martial/cqc (src)
+	new /obj/item/reagent_containers/hypospray/medipen(src)
+	new /obj/item/jawsoflife(src)
 
 /datum/outfit/nso
 	name = "NSO Soldier"
@@ -64,8 +69,7 @@
 	name = "NSO Officer"
 
 	head = /obj/item/clothing/head/HoS/beret/nso
-	mask = null
-
+	belt = /obj/item/storage/belt/military/camo/nso
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/deagle=1,
 		/obj/item/ammo_box/magazine/m50=1,
@@ -75,11 +79,20 @@
 /datum/outfit/nso/stealth       // Big boss
 	name = "NSO Infiltrator"
 
-	head = /obj/item/clothing/head/helmet/camo
+	head = null
 	back = null
-	suit = null
-	suit_store = null
+	suit = /obj/item/clothing/suit/armor/bulletproof
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
 	uniform = /obj/item/clothing/under/syndicate/camo/stealth
 	belt = /obj/item/storage/belt/military/camo/stealth
 	implants = list(/obj/item/implant/stealth)
 	id = /obj/item/card/id/syndicate
+
+/datum/outfit/nso/elite
+	name = "NSO Elite Trooper"
+
+	head = /obj/item/clothing/head/helmet/juggernaut
+	suit = /obj/item/clothing/suit/armor/heavy/juggernaut
+	back = /obj/item/minigunbackpack
+	belt = /obj/item/storage/belt/military/camo/elite
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle
