@@ -16,7 +16,7 @@ Keithette	=	Jehovas Witness
 
 JakeGains	=	Jehovas Witness
 
-TheBucketBip	=	Host
+TheBucketBip	=	Head Coder
 
 Bkumie	=	Maintainer
 
