@@ -1,5 +1,5 @@
 /obj/item/gun/ballistic/automatic/pistol
-	name = "stechkin pistol"
+	name = "syndicate pistol"
 	desc = "A small, easily concealable 10mm handgun. Has a threaded barrel for suppressors."
 	icon_state = "pistol"
 	w_class = WEIGHT_CLASS_SMALL
@@ -15,6 +15,7 @@
 	rack_sound = "sound/weapons/pistolrack.ogg"
 	bolt_drop_sound = "sound/weapons/pistolslidedrop.ogg"
 	bolt_wording = "slide"
+	mag_display = TRUE
 
 /obj/item/gun/ballistic/automatic/pistol/no_mag
 	spawnwithmagazine = FALSE
