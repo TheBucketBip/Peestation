@@ -473,6 +473,12 @@ update_label("John Doe", "Clowny")
 	assignment = "Emergency Response Team Commander"
 	registered_age = null
 
+/obj/item/card/id/ert/nso
+	name = "\improper New Soviet Order ID"
+	desc = "An NSO ID card."
+	registered_name = "NSO Patrol Unit"
+	assignment = "NSO Patrol Unit"
+
 /obj/item/card/id/ert/amber
 	name = "\improper Amber Task Force ID"
 	desc = "An Amber Task Force ID card."

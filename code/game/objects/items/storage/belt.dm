@@ -359,6 +359,13 @@
 	item_state = "militarywebbing"
 	resistance_flags = FIRE_PROOF
 
+/obj/item/storage/belt/military/camo
+	name = "military chest rig"
+	desc = "A set of tactical webbing used by a variety of militaries across the galaxy."
+	icon_state = "explorer1"
+	item_state = "explorer1"
+	resistance_flags = FIRE_PROOF
+
 /obj/item/storage/belt/military/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
