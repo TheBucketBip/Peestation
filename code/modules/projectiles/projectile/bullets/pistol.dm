@@ -34,3 +34,9 @@
 	name = "10mm incendiary bullet"
 	damage = 15
 	fire_stacks = 2
+
+/obj/item/projectile/bullet/c10mm_riot
+	name = "10mm RIOT bullet"
+	damage = 15
+	armour_penetration = -50
+	stamina = 40

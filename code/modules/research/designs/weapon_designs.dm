@@ -393,3 +393,28 @@
 	build_path = /obj/item/ammo_casing/shotgun/dart/noreact
 	category = list("Ammo")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+
+
+// Police Pistol //
+
+
+/datum/design/pistol_magazine
+	name = "Pistol magazine (10mm RIOT)"
+	desc = "Designed to quickly reload revolvers. TRAC bullets embed a tracking implant within the target's body."
+	id = "10mm_riot"
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 4000, MAT_SILVER = 2000)
+	build_path = /obj/item/ammo_box/magazine/m10mm/riot
+	category = list("Ammo")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
+
+/datum/design/police_pistol
+	name = "Police pistol"
+	desc = "A standard issue law enforcement firearm for planetary police forces."
+	id = "policepistol"
+	build_type = PROTOLATHE
+	materials = list(MAT_SILVER = 5000, MAT_METAL = 20000, MAT_DIAMOND = 2000)
+	build_path = /obj/item/gun/ballistic/automatic/pistol/police
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_SECURITY

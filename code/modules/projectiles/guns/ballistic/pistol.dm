@@ -20,6 +20,16 @@
 /obj/item/gun/ballistic/automatic/pistol/no_mag
 	spawnwithmagazine = FALSE
 
+/obj/item/gun/ballistic/automatic/pistol/police
+	name = "police pistol"
+	desc = "A 10mm handgun. Built for law enforcement."
+	icon_state = "p_pistol"
+	w_class = WEIGHT_CLASS_NORMAL
+	can_suppress = FALSE
+	pin = null
+	mag_type = /obj/item/ammo_box/magazine/m10mm/riot
+	spawnwithmagazine = FALSE
+
 /obj/item/gun/ballistic/automatic/pistol/suppressed/Initialize(mapload)
 	. = ..()
 	var/obj/item/suppressor/S = new(src)
