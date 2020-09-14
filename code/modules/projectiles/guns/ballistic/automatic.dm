@@ -344,3 +344,32 @@
 	actions_types = list()
 	fire_sound = 'sound/weapons/laser.ogg'
 	casing_ejector = FALSE
+
+
+// NAK assault rifle //
+
+
+/obj/item/gun/ballistic/automatic/nak
+	name = "\improper NAK-556 'Breacher'"
+	desc = "A robust assault rifle made popular due to how cheap it is to produce. This one has the serial number scratched off."
+	icon_state = "ak"
+	item_state = "arg"
+	mag_type = /obj/item/ammo_box/magazine/ak/m556
+	bolt_type = BOLT_TYPE_LOCKING
+	w_class = WEIGHT_CLASS_NORMAL
+	weapon_weight = WEAPON_HEAVY
+	fire_sound = 'sound/weapons/rifleshot.ogg'
+	rack_sound = 'sound/weapons/chunkyrack.ogg'
+	can_suppress = FALSE
+	burst_size = 3
+	fire_delay = 1
+	spread = 7
+	pin = /obj/item/firing_pin/implant/pindicate
+	mag_display = TRUE
+	tac_reloads = TRUE
+
+
+
+/obj/item/gun/ballistic/automatic/nak/unrestricted
+	desc = "A robust assault rifle made popular due to how cheap it is to produce."
+	pin = /obj/item/firing_pin

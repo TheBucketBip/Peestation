@@ -447,6 +447,15 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	player_minimum = 25
 	restricted = TRUE
 
+/datum/uplink_item/dangerous/nak
+	name = "NAK-556 'Breacher' Assault rifle"
+	desc = "A cheap and reliable firearm thats popular practically everywhere. \
+			This automatic rifle has a 30-round magazine chambered in 5.56x45mm NATO."
+	item = /obj/item/gun/ballistic/automatic/nak
+	cost = 15
+	surplus = 0
+	include_modes = list(/datum/game_mode/nuclear)
+
 /datum/uplink_item/dangerous/machinegun
 	name = "L6 Squad Automatic Weapon"
 	desc = "A fully-loaded Aussec Armoury belt-fed machine gun. \
@@ -780,6 +789,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			These bullets pack less punch than 7.12x82mm rounds, but they still offer more power than .45 ammo."
 	item = /obj/item/ammo_box/magazine/m556
 	cost = 4
+	include_modes = list(/datum/game_mode/nuclear)
+
+/datum/uplink_item/ammo/nak
+	name = "5.56mm Rifle Magazine"
+	desc = "An additional 30-round 5.56mm magazine; made for the NAK-556. \
+			These bullets pack less punch than 7.12x82mm rounds, but they still offer more power than .45 ammo."
+	item = /obj/item/ammo_box/magazine/ak/m556
+	cost = 3
 	include_modes = list(/datum/game_mode/nuclear)
 
 /datum/uplink_item/ammo/machinegun
@@ -1921,7 +1938,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 4
 	cant_discount = TRUE
 	illegal_tech = FALSE
-	
+
 /datum/uplink_item/badass/syndiefedora
 	name = "Syndicate Fedora"
 	desc = "This Syndicate Fedora of micro-woven adamantium silk is sure to prove your style!"

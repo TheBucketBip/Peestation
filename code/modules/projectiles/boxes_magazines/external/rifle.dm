@@ -20,3 +20,12 @@
 	caliber = "a556"
 	max_ammo = 30
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
+
+
+/obj/item/ammo_box/magazine/ak/m556
+	name = "rifle magazine (5.56mm)"
+	icon_state = "assault_rifle"
+	ammo_type = /obj/item/ammo_casing/a556
+	caliber = "a556"
+	max_ammo = 30
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
