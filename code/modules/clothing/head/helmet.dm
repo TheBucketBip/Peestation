@@ -174,6 +174,16 @@
 	strip_delay = 80
 	dog_fashion = null
 
+/obj/item/clothing/head/helmet/camo
+	name = "camo bandana"
+	icon_state = "bandcamo"
+	desc = "Wearing this makes you feel like you're back in 'nam."
+	item_state = "bandcamo"
+	armor = list("melee" = 30, "bullet" = 15, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	strip_delay = 80
+	flags_inv = null
+	dog_fashion = null
+
 /obj/item/clothing/head/helmet/police
 	name = "police officer's hat"
 	desc = "A police officer's Hat. This hat emphasizes that you are THE LAW."
@@ -409,7 +419,7 @@
 	for(var/X in actions)
 		var/datum/action/A = X
 		A.UpdateButtonIcon()
-		
+
 /obj/item/clothing/head/helmet/stormtrooper
 	name = "Storm Trooper Helmet"
 	desc = "Battle Helmet from a long lost empire"

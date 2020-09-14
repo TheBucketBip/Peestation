@@ -16,9 +16,8 @@
 
 /obj/item/storage/belt/military/camo/stealth
 	name = "stealth rig"
-	icon = 'yogstation/icons/obj/clothing/suits.dmi'
-	icon_state = "soldier_webbing"
-	item_state = "soldier_webbing"
+	icon_state = "explorer2"
+	item_state = "webbing"
 
 /obj/item/storage/belt/military/camo/nso/ComponentInitialize() // NSO Soldier
 	. = ..()
@@ -76,7 +75,7 @@
 /datum/outfit/nso/stealth       // Big boss
 	name = "NSO Infiltrator"
 
-	head = null
+	head = /obj/item/clothing/head/helmet/camo
 	back = null
 	suit = null
 	suit_store = null
