@@ -474,10 +474,11 @@ update_label("John Doe", "Clowny")
 	registered_age = null
 
 /obj/item/card/id/ert/nso
-	name = "\improper New Soviet Order ID"
-	desc = "An NSO ID card."
-	registered_name = "NSO Patrol Unit"
-	assignment = "NSO Patrol Unit"
+	name = "\improper New Soviet Order Dogtags"
+	desc = "A dogtag that functions the same as an ID card."
+	icon_state = "nsotag"
+	registered_name = "NSO Special Operations Unit"
+	assignment = "NSO Special Operations Unit"
 
 /obj/item/card/id/ert/amber
 	name = "\improper Amber Task Force ID"

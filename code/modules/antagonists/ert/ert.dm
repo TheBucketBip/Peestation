@@ -34,7 +34,7 @@
 /datum/antagonist/ert/deathsquad/New()
 	. = ..()
 	name_source = GLOB.commando_names
-	
+
 /datum/antagonist/ert/clown/New()
 	. = ..()
 	name_source = GLOB.clown_names
@@ -146,6 +146,23 @@
 	outfit = /datum/outfit/centcom_clown/honk_squad
 	role = "HONKER"
 
+// NSO
+
+/datum/antagonist/ert/nso
+	name = "NSO Soldier"
+	outfit = /datum/outfit/nso
+	role = "Soldier"
+
+/datum/antagonist/ert/nso/commander
+	name = "NSO Officer"
+	outfit = /datum/outfit/nso/commander
+	role = "Officer"
+
+/datum/antagonist/ert/nso/stealth
+	name = "NSO Inflitrator"
+	outfit = /datum/outfit/nso/stealth
+	role = "Infiltrator"
+
 /datum/antagonist/ert/create_team(datum/team/ert/new_team)
 	if(istype(new_team))
 		ert_team = new_team
@@ -210,3 +227,18 @@
 
 		missiondesc += " Be the funniest Prankster possible!"
 	owner.current.playsound_local(get_turf(owner.current), 'sound/ambience/antag/hornin.ogg', 100, FALSE, pressure_affected = FALSE)
+
+/datum/antagonist/ert/nso/greet()
+	if(!ert_team)
+		return
+
+	to_chat(owner, "<B><font size=3 color=red>You are the [name].</font></B>")
+
+	var/missiondesc = "Your squad is being sent on a mission to [station_name()] after recieving and intercepting their distress call to NanoTrasen."
+	if(leader) //If Squad Leader
+		missiondesc += " Lead your squad to ensure the completion of the mission. Board the shuttle when your team is ready."
+	else
+		missiondesc += " Follow orders given to you by your squad leader."
+
+	missiondesc += "<BR><B>Your Mission</B> : [ert_team.mission.explanation_text]"
+	to_chat(owner,missiondesc)

@@ -30,6 +30,17 @@
 	leader_role = /datum/antagonist/ert/amber/commander
 	roles = list(/datum/antagonist/ert/amber,/datum/antagonist/ert/amber,/datum/antagonist/ert/amber/medic) // entered duplicate here to increase change of soldiers
 
+/datum/ert/nso
+	opendoors = FALSE
+	code = "Red"
+	rename_team = "NSO Specialist Operations Unit"
+	mission = "Eliminate the threat to the civilians. Steal and secure the station blueprints."
+	polldesc = "the NSO Responders"
+	enforce_human = FALSE
+	teamsize = 5
+	leader_role = /datum/antagonist/ert/nso/commander
+	roles = list(/datum/antagonist/ert/nso,/datum/antagonist/ert/nso,/datum/antagonist/ert/nso,/datum/antagonist/ert/nso/stealth) //A yanderedev quality fix to a fairly simple issue.
+
 /datum/ert/red
 	leader_role = /datum/antagonist/ert/commander/red
 	roles = list(/datum/antagonist/ert/security/red, /datum/antagonist/ert/medic/red, /datum/antagonist/ert/engineer/red)

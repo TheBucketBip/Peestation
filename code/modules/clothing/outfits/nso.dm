@@ -16,6 +16,8 @@
 
 /obj/item/storage/belt/military/camo/stealth
 	name = "stealth rig"
+	icon_state = "explorer2"
+	item_state = "explorer2"
 
 /obj/item/storage/belt/military/camo/nso/ComponentInitialize() // NSO Soldier
 	. = ..()
@@ -88,11 +90,3 @@
 	implants = list(/obj/item/implant/stealth)
 	id = /obj/item/card/id/syndicate
 
-/datum/outfit/nso/elite
-	name = "NSO Elite Trooper"
-
-	head = /obj/item/clothing/head/helmet/juggernaut
-	suit = /obj/item/clothing/suit/armor/heavy/juggernaut
-	back = /obj/item/minigunbackpack
-	belt = /obj/item/storage/belt/military/camo/elite
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/deagle
