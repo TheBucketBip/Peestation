@@ -94,7 +94,7 @@
 				candy_cooldown = world.time+1200
 			else
 				to_chat(user, "You just took a candy corn! You should wait a couple minutes, lest you burn through your stash.")
-				
+
 /obj/item/clothing/head/det_hat/evil
 	name = "suspicious fedora"
 	icon_state = "syndicate_fedora"
@@ -123,7 +123,7 @@
 		icon_state = "syndicate_fedora"
 		attack_verb = list("poked", "tipped")
 		hitsound = 'sound/weapons/genhit.ogg'
-		
+
 /obj/item/clothing/head/det_hat/evil/throw_impact(atom/hit_atom,)
 	if(iscarbon(src.loc))
 		return ..()
@@ -308,6 +308,14 @@
 	name = "treasure hunter's fedora"
 	desc = "You got red text today kid, but it doesn't mean you have to like it."
 	icon_state = "curator"
+
+// Miner
+/obj/item/clothing/head/beret/miner
+	name = "explorer beret"
+	desc = "A robust beret worn by off-duty miners."
+	icon_state = "explorerberet"
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0)
+	dog_fashion = null
 
 #undef DRILL_DEFAULT
 #undef DRILL_SHOUTING
