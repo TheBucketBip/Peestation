@@ -143,3 +143,24 @@ obj/item/gun/ballistic/rifle/attackby(obj/item/A, mob/user, params)
 		user.put_in_hands(gun)
 	else
 		user.dropItemToGround(src, TRUE)
+
+// NSO SNIPER //
+
+/obj/item/gun/ballistic/rifle/soviet_sniper
+	name = "\improper Scoped Mosin Nagant"
+	desc = "A high quality recreation of the Mosin Nagant rifle. Comes with a scope that cant be removed."
+	icon_state = "moistnugget_scope"
+	item_state = "moistnugget"
+	vary_fire_sound = FALSE
+	weapon_weight = WEAPON_HEAVY
+	slot_flags = ITEM_SLOT_BACK
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
+	w_class = WEIGHT_CLASS_BULKY
+	zoomable = TRUE
+	zoom_amt = 10 //Long range, enough to see in front of you, but no tiles behind you.
+	zoom_out_amt = 5
+	slot_flags = ITEM_SLOT_BACK
+	actions_types = list()
+	can_bayonet = TRUE
+	knife_x_offset = 27
+	knife_y_offset = 13

@@ -310,6 +310,7 @@
 	can_unsuppress = TRUE
 	pin = /obj/item/firing_pin/implant/pindicate
 
+
 // Old Semi-Auto Rifle //
 
 /obj/item/gun/ballistic/automatic/surplus
